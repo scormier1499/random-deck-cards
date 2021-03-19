@@ -1,1 +1,94 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: white;
+  background-image: url(https://cdn1.vectorstock.com/i/1000x1000/42/75/poker-table-cards-and-chips-realistic-theme-vector-8714275.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  height: 400px;
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.card h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 60px;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  font-size: 100px;
+}
+
+.card::before {
+  top: -1.7rem;
+  left: 1.3rem;
+}
+
+.card::after {
+  bottom: -1.7rem;
+  right: 1.3rem;
+  transform: rotate(180deg);
+}
+
+.diamonds::before,
+.diamonds::after,
+.hearts::before,
+.hearts::after {
+  color: red;
+}
+
+.diamonds h1,
+.hearts h1 {
+  color: red;
+}
+
+.hearts::before,
+.hearts::after {
+  content: "\2665";
+}
+
+.diamonds::before,
+.diamonds::after {
+  content: "\2666";
+}
+
+.spades::before,
+.spades::after {
+  content: "\2660";
+}
+
+.clubs::before,
+.clubs::after {
+  content: "\2663";
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
