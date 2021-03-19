@@ -87,8 +87,12 @@ body {
   height: 500px;
 }
 
-.button {
+.deal-button {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#div-deal-button {
+  display: block !important;
 }

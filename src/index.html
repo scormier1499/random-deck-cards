@@ -17,17 +17,15 @@
       <div class="card">
         <h1></h1>
       </div>
-      <div>
-        <p class="button">
-          <input type="button" value="Deal me!" onClick="refresh(this)" />
+      <div id="div-deal-button" style="display:none;">
+        <p class="deal-button">
+          <input
+            type="button"
+            value="Deal me!"
+            onClick="window.location.reload();"
+          />
         </p>
       </div>
     </div>
-
-    <script>
-      function refresh() {
-        window.location.reload("Deal me!");
-      }
-    </script>
   </body>
 </html>
